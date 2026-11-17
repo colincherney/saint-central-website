@@ -1,4 +1,5 @@
 import { site, supportLink } from "@/lib/site";
+import { ContentPolicy } from "@/components/content-policy";
 
 function PrivacyContact() {
   return <a href={supportLink("Saint Central privacy request") ?? "#support"}>{site.supportEmail ?? "Contact support"}</a>;
@@ -58,14 +59,16 @@ export function Legal() {
             <p>We will update this page and its revision date when our practices change. Where required, we will provide additional notice or obtain consent for material changes.</p>
           </div>
         </details>
+        <ContentPolicy />
         <details id="terms" className="legal-item">
-          <summary><span><h3>Terms & community guidelines</h3><span className="legal-description">Sharing this space with care</span></span><span className="expand-icon" aria-hidden="true" /></summary>
+          <summary><span><h3>Terms of use</h3><span className="legal-description">Sharing this space with care</span></span><span className="expand-icon" aria-hidden="true" /></summary>
           <div className="legal-body">
-            <p className="updated">Last updated {site.updated}</p>
+            <p className="updated">Last updated {site.communityUpdated}</p>
             <p>These terms govern your use of Saint Central’s community features and this website. By using them, you agree to these terms. Apple’s Standard End User License Agreement governs the license for the iOS app. Contact the Saint Central team at <a href={supportLink("Saint Central terms question") ?? "#support"}>{site.supportEmail ?? "Support"}</a>.</p>
             <h4>Using the service</h4>
             <p>Use Saint Central lawfully and respectfully. Keep your login credentials secure and provide accurate account information. If you need a parent or guardian’s permission under the laws where you live, obtain that permission before using the service.</p>
             <h4>Care for the community</h4>
+            <p>All shared content must follow our <a href="#content-policy">content policy and posting guidelines</a>, which explain what you can share, how to protect anonymity, and how moderation works.</p>
             <p>Share prayers and encouragement in good faith. Harassment, hate, threats, exploitation, sexual content involving minors, spam, scams, impersonation, and encouragement of self-harm or violence are prohibited. Respect anonymity and avoid sharing identifying or private information about anyone else. Only submit content you have the right to share.</p>
             <p>We use automated moderation and may review, restrict, or remove content and suspend access when needed to enforce these terms, protect users, or comply with law. To report a concern, email support with enough context to locate the content.</p>
             <h4>Your content</h4>

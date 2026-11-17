@@ -18,7 +18,8 @@ export const site = {
   appStoreUrl: httpsUrl(process.env.NEXT_PUBLIC_APP_STORE_URL || "https://apps.apple.com/tr/app/saint-central/id6742437524"),
   url: httpsUrl(process.env.NEXT_PUBLIC_SITE_URL),
   appleEula: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
-  updated: "November 14, 2026"
+  updated: "November 14, 2026",
+  communityUpdated: "November 17, 2026"
 };
 
 export function supportLink(subject: string) {

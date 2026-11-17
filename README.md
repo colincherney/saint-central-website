@@ -30,11 +30,14 @@ The site is one page. These convenient paths redirect to its corresponding secti
 - `/privacy` and `/privacy-policy`
 - `/support`
 - `/terms`
+- `/content-policy` and `/community-guidelines`
 - `/eula`
 - `/delete-account`
 
 The footer also links directly to Apple’s [Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).
 
 ## Policy content
+
+The Content Policy explains posting requirements, anonymity, allowed difficult topics, prohibited content, moderation, and support review requests. It is linked from the footer, support FAQ, and terms, and opens automatically at `/content-policy` or `/community-guidelines`. Content and terms were updated on November 17, 2026 after reviewing [`colincherney/prayer` at commit `93a4e0b`](https://github.com/colincherney/prayer/tree/93a4e0b42e71d097f1af967e71e91c0786adc35a), including the `submit-prayer`, `submit-pair-intent`, `submit-prayer-update`, and `submit-reflection` moderation functions and the corresponding app screens. The app currently shows different encouragement limits in community and group screens, so the policy directs members to the limit shown in the app. This website change does not add a policy link or acceptance screen inside the mobile app.
 
 Privacy and support copy follows the Prayer repository’s account, guest, prayer-sharing, group, journal, moderation, notification, purchase, and deletion implementation as inspected on November 14, 2026. It identifies Supabase, Expo, Apple, RevenueCat, OpenAI, and Vercel. Confirm the wording against your production service-provider configuration, retention practices, supported audiences, and actual business details before using it for an App Store submission. Revise the text and date when those practices change.
